@@ -50,11 +50,11 @@ class Passenger {
     let drivers = [];
     let passenger = this;
     store.drivers.forEach(function(trip){
-      if (trip.passengerId == passenger.id) {
+      if (trip.passengerId === passenger.id) {
         let driver = store.drivers.find(function(driver){return driver.id === trip.driverId});
         drivers.push(driver);
       }
-    });''
+    });
     return drivers;
   }
 
