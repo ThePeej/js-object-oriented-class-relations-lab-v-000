@@ -14,7 +14,7 @@ class Driver {
   }
 
   passengers(){
-    let passengers = [];
+    // let passengers = [];
     return store.passengers.filter(function(trip){
       let driver = this;
       if (trip.driverId == driver.id) {
@@ -22,7 +22,7 @@ class Driver {
         passengers.push(passenger);
       }
     }).bind(this);
-    return passengers;
+    // return passengers;
   }
 }
 
