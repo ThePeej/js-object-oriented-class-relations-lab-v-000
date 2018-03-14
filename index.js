@@ -21,7 +21,7 @@ class Driver {
         passenger = store.passenger.find(function(passenger){passenger.id == trip.passengerId});
         passengers.push(passenger);
       }
-    }).bind(this);
+    }).call(this);
     // return passengers;
   }
 }
