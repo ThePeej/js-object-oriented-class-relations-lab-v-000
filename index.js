@@ -51,7 +51,7 @@ class Passenger {
     let passenger = this;
     store.drivers.forEach(function(trip){
       if (trip.passengerId == passenger.id) {
-        let driver = store.drivers.find(function(driver){driver.id === trip.driverId});
+        let driver = store.drivers.find(function(driver){return driver.id === trip.driverId});
         drivers.push(driver);
       }
     }.bind(this))
