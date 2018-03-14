@@ -14,7 +14,7 @@ class Driver {
   }
 
   passengers(){
-    // let passengers = [];
+    let passengers = [];
     let driver = this;
     store.passengers.filter(function(trip){
       if (trip.driverId == driver.id) {
