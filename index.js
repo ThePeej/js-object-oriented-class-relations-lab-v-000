@@ -16,13 +16,13 @@ class Driver {
   passengers(){
     // let passengers = [];
     let driver = this;
-    return store.passengers.filter(function(trip){
+    store.passengers.filter(function(trip){
       if (trip.driverId == driver.id) {
         passenger = store.passenger.find(function(passenger){passenger.id == trip.passengerId});
         passengers.push(passenger);
       }
     }.bind(this));
-    // return passengers;
+    return passengers;
   }
 
   trips(){
