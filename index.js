@@ -60,10 +60,10 @@ class Passenger {
 
   trips(){
     return store.trips.filter(function(trip){
-      return trip.driverId === this.id
+      return trip.passengerId === this.id
     }.bind(this));
   }
-  
+
 }
 
 let tripCount = 0;
