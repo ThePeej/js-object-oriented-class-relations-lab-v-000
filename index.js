@@ -48,7 +48,7 @@ class Passenger {
 
   drivers(){
     let drivers = [];
-    store.drivers.filter(function(trip){
+    store.drivers.forEach(function(trip){
       let passenger = this;
       if (trip.passengerId == passenger.id) {
         let driver = store.drivers.find(function(driver){driver.id === trip.driverId});
