@@ -24,6 +24,10 @@ class Driver {
     }).call(this);
     // return passengers;
   }
+
+  trips(){
+    
+  }
 }
 
 
