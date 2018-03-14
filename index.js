@@ -54,7 +54,7 @@ class Passenger {
         let driver = store.drivers.find(function(driver){return driver.id === trip.driverId});
         drivers.push(driver);
       }
-    }.bind(this))
+    });''
     return drivers;
   }
 
